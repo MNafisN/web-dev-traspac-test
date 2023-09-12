@@ -15,10 +15,10 @@ class DaftarPegawai extends Model
     use HasFactory;
 
     protected $table = 'daftar_pegawai';
-    protected $primaryKey = 'nip';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
-        'no_npwp',
+        'nip',
         'id_pegawai',
         'id_jabatan',
         'id_unit_kerja',

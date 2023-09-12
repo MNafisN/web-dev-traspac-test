@@ -33,4 +33,9 @@ class Pegawai extends Model
     {
         return $this->hasOne(DaftarPegawai::class, 'id_pegawai', 'id_pegawai');
     }
+
+    public function photo(): HasOne
+    {
+        return $this->hasOne(File::class, 'id_pegawai', 'id_pegawai');
+    }
 }
