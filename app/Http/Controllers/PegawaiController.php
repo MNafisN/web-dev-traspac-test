@@ -231,10 +231,11 @@ class PegawaiController extends Controller
     public function exportExcelDataPegawai()
     {
         try {
-            $result = [
-                'status' => 200,
-                'data' => $this->pegawaiService->exportExcel()
-            ];
+            return $this->pegawaiService->exportExcel();
+            // $result = [
+            //     'status' => 200,
+            //     'data' => $this->pegawaiService->exportExcel()
+            // ];
         } catch (Exception $err) {
             $result = [
                 'status' => 404,
